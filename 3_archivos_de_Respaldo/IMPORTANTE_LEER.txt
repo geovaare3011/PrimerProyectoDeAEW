@@ -1,8 +1,0 @@
-los archivos de aqui se cambiarán constantemente,
-solo y cuando se verfiquen todos y ya este con una modificación
-chequeadas; cada domingo se hará el translado de los archivos a 
-los ultimos modificados, esta carpeta sirve por si se elimina
-una carpeta de los archivos originales y asi poder volver a 
-recuperarlos.
-no sacar ningún archivo ni meter durante toda la semana hasta
-llegado el dia de translado, domingo.
