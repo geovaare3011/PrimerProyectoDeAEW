@@ -1,0 +1,75 @@
+#body {
+    background-color: rgb(236, 233, 228)
+}
+
+#div {
+    text-align: center;
+}
+
+#div1 {
+    text-align: initial;
+}
+
+#img {
+    width: 900px;
+    height: 350px;
+}
+
+#img1 {
+    width: 450px;
+    height: 250px;
+}
+
+h1{
+    float: left;
+    
+}
+
+#nav{
+    text-align: end;
+    border: 1px solid;
+    margin-bottom: 10px;
+    border-radius: 6px 6px 6px 6px;
+}
+
+#nav1{
+    text-align: center;
+    border: 1px solid;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  
+}
+
+#button1 {
+    background-color: green;
+    color: white;
+    margin: 3px;
+    border-radius: 5px;
+
+}
+
+#button2 {
+    background-color: blue;
+    color: white;
+    margin: 3px;
+    border-radius: 5px;
+
+}
+
+#button3 {
+    background-color: red;
+    color: white;
+    margin: 3px;
+    border-radius: 5px;
+
+}
+
+#button {
+    background-color: purple;
+    color: white;
+    margin: 5px;
+    border-radius: 5px;
+
+}
+
+
