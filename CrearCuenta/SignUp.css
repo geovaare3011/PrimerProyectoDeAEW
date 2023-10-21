@@ -85,7 +85,7 @@ form .gender-details .category{
   border-radius: 50%;
   margin-right: 10px;
   border: 5px solid transparent;
-  tansition: all 0.3 ease;
+  transition: all 0.3 ease;
 }
 #dot-1:checked ~ .category label .one,
 #dot-2:checked ~ .category label .two,
@@ -98,7 +98,7 @@ form input[type="radio"]{
 }
 form .button{
   height: 45px;
-  margin: 45px 0;
+  margin: 45px 0px 20px;
 }
 form .button input{
   height: 100%;
@@ -134,4 +134,18 @@ form .button input:hover{
   .user-details::-webkit-scrollbar{
     width:0;
   }
+}
+.list{
+  margin-top: 10px;
+  display: flex;
+  border: none;
+  background-color: #fff;
+  text-decoration: none;
+  padding: 0px;
+  text-align: justify;
+  justify-content: space-evenly;
+  display: flex;
+}
+.Rights{
+  margin-top: 10px
 }
