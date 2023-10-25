@@ -145,6 +145,7 @@ form .button input:hover{
   text-align: justify;
   justify-content: space-evenly;
   display: flex;
+  color:white;
 }
 .Rights{
   margin-top: 10px
