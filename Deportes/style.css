@@ -3,26 +3,35 @@
 }
 
 #div {
+    
     text-align: center;
 }
 
-#div1 {
-    text-align: initial;
-}
+
 
 #img {
     width: 900px;
     height: 350px;
 }
 
-#img1 {
-    width: 450px;
-    height: 250px;
-}
 
 h1{
     float: left;
     
+    
+}
+
+#img1 {
+    max-width: 1755px;
+    padding-left: 37px;
+    width: 450px;
+    height: 250px;
+}
+
+#hr{
+    max-width: 1755px;
+    margin: 0 auto;
+
 }
 
 #nav{
@@ -37,6 +46,7 @@ h1{
     border: 1px solid;
     border-radius: 5px;
     margin-bottom: 10px;
+    
   
 }
 
