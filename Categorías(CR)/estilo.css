@@ -14,6 +14,7 @@ header {
 h1 {
     font-size: 36px;
     margin: 20px;
+    
 }
 
 nav {
@@ -22,6 +23,7 @@ nav {
     text-align: center;
     padding: 10px;
     border-radius: 6px 6px 6px 6px;
+
     
 }
 
@@ -57,7 +59,12 @@ nav a {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-
+.hr {
+    max-width: 1855px;
+    margin: 0 auto;
+   
+    
+}
 
 footer {
     text-align: center;
