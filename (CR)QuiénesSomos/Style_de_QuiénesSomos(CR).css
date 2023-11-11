@@ -11,6 +11,21 @@ body{
      background-color: rgb(214, 214, 214);
 }
 
+main{
+    height: 100%;
+    width: 100%;
+    margin-bottom: 920px;
+}
+
+.Información{
+
+    height: 50%;
+
+    width: 100%;
+
+}
+
+
 header{
     /*todo el header es la caja que 
     rodea a los botones*/
@@ -22,11 +37,39 @@ header{
     height: 50px ;
     justify-content:space-between;
     align-items: flex-end;
-    padding: 10px;
+
     border-radius:9px ;
     flex-direction: column;
     z-index: 0;
-    border: 2px solid #000000
+    border: 2px solid #000000;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+
+}
+
+nav{
+
+    width: 100%;
+    height: inherit;
+}
+
+.LogoG{
+    float: left;
+    height: 45px;
+    width: 45px;  
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+.LogoG2{
+    float: left;
+    height: 65px;
+    width: 65px;  
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: -15px;
+    margin-bottom: 1px;  
 }
 
 
@@ -34,11 +77,11 @@ header{
     /* todo dentro del nav-link, desde 
     esta llave, es el color y diseño 
     de los botones*/
-
+    padding: 7px;
+    float: right;
 
     padding-left: 10px;
     padding-right: 10px;
-
 
 
 .boton-nav{
@@ -81,9 +124,11 @@ header{
 /*hasta esta llave*/
 }
 
-nav{
+.espacio{
 
-    margin-top: -2px;
+
+    display: flex;
+
 }
 
 .botones{
@@ -106,22 +151,13 @@ nav{
 
     width: 100%;
     height: 100%;
-    margin-top: -5px;
+    margin-top: 3px;
+    margin-right: 4px;
     float: right;
 
 
 }
 
-
-
-
-
-.espacio{
-
-
-    display: flex;
-
-}
 
 .CI{
 
@@ -131,15 +167,22 @@ float: left;
 
 }
 
+.MCT{
+
+width: 70%;    
+margin-top: 2%;
+margin-bottom: 2%;
+}
+
 .CT{
 
-width: 70%;
-height: 100%;
-float: right;
-background-color: white;
-margin-top: 5%;
-
-}
+    width: 120%;
+    height: 100%;
+    float: right;
+    background-color: white;
+    border: solid black;
+    
+    }
 
 .img {
     
@@ -160,7 +203,10 @@ float: left;
 .QSTitulo{
 
     align-items: center;
+    padding-left: 3%;
+    padding-right: 25%;
 }
+
 
 .textMain{
 
@@ -168,10 +214,71 @@ float: left;
     display: flex;
     justify-content: center;
     align-items: center;
-
-
-
+    padding-left: 8%;
+    padding-right: 10%;
 }
+
+.Titular{
+    border: 1px solid rgb(0, 0, 0);
+    float: left;
+    padding: 1%;
+    text-align:  center;
+    width: 105%;
+    height: 100%;
+    border-radius: 340px;
+    margin-top: 10px;  
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    
+    
+    }
+
+    .FPerfil{
+        width: 90px;
+        border-radius: 340px;
+    }
+    
+    .Nombres{
+        text-align: left;
+
+        float: right;
+    }
+
+    .title{
+    
+        width: auto;
+        height: 165px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        padding: -5px;
+        margin-top: -6px;
+        margin-bottom: -6px;
+        margin-left: 22%;
+        margin-right: 15%;
+
+
+    }
+    
+    .text{
+    
+        width: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 22%;
+        margin-right: 15%;
+
+    }
+    
+    .text-2{
+        width: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
 
 
 
@@ -209,38 +316,6 @@ height: 100%;
 
 }
 
-/*
-.grid-imagen2{
-    
-    display: grid;
-    margin-bottom: 8255px;
-    width: 100%; 
-    
-    /* -Establece el ancho de la celda al 100%- */
-    /*
-    height: 100%; 
-*/
-    /* -Establece la altura de la celda al 100%- */
-    /*
-    border: 14px solid #ccc; 
-    */
-    /* -Borde opcional para visualización- */
-    /*
-    justify-content: center;
-    overflow-x: auto;
-    
-
-
-}
-*/
-
-hr{
-    
-    background-color: #111313;    
-    margin-top: 5px;
-
-}
-
 .titulo-comunidades{
     display: flex;
 
@@ -252,98 +327,68 @@ hr{
     padding: 1px;
     width: 100%;
     }
-
-.Titular{
-border: 1px solid rgb(0, 0, 0);
-float: left;
-padding: 1%;
-text-align:  center;
-width: 105%;
-height: 100%;
-border-radius: 340px;
-margin-top: 10px;  
-background: linear-gradient(135deg, #71b7e6, #9b59b6);
-
-
-}
-
-.title{
-
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-
-}
-
-
-
-.text{
-
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 25%;
-    margin-right: 25%;
-
-
-}
-
-
-
-.card-Individual{
+    .card-Individual{
 
         height: 100%;
-        width: 29.5%;
+        width: 100%;
         float: right;
         display: flex;
     
     }
 
+    .contenedores{
+
+        width: 100%;
+    }
     
- .Grupo{
-
-
-        width: 70%;
+    .Grupo{
+    
+        width: 68.5%;
+        height: auto;
         float: left;
         margin-top: 1px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        }
+        
+        .C1{
+            width: 100%;
+            height: auto;
+            float: left;
         }
     
-    .C1{
-        width: 50%;
-        float: left;
-    }
-
-    .C2{
-        width: 50%;
-        float: right;
-    }
-
+        .C2{
+            width: 100%;
+            height: auto;
+            float: right;
+        }
     
 .Individual{
-height: 100%;
-} 
-
-
-    .content{/*
-        padding: 15px 0px 0px 44px;*/
+    width: 29.5%;
+    height: auto;
+    float: right;
     
-        width: 100%;
-        height: 100%;
-        border: 1px solid rgb(0, 0, 0);
-        border-radius: 160px;
-        margin-top: 10px;
-        background-color: gray;
-        box-shadow: 0 40px 8px rgba(0, 0, 0, 0.2);
+    } 
+
+
+.content{
+    /*padding: 15px 0px 0px 44px;*/
+    width: 100%;
+    height: auto;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 160px;
+    margin-top: 10px;
+    background-color: gray;
+    box-shadow: 0 40px 8px rgba(0, 0, 0, 0.2);
         
     
     
     }
+
     .content2{
         width: 100%;
-        height: 100%;
+        height: auto;
         border: 1px solid rgb(0, 0, 0);
         border-radius: 140px;
         margin-top: 10px;  
@@ -351,17 +396,23 @@ height: 100%;
         box-shadow: 0 40px 8px rgba(0, 0, 0, 0.2);
     }
 
+    .hr-1 {
+        width: 1547px;
+        margin: 0 auto;
+
+       margin-top: 57%;
+        
+    }
 
     footer{
-        margin-top: 59px;
         width: 100%;
-
         background-color: rgb(214, 214, 214);
         padding: 0px;
         text-align: center;
         justify-content: space-evenly;
         display: flex;
-    }
+    
+     }
 
 
     ul{ /*este afecta a todos los ul*/
