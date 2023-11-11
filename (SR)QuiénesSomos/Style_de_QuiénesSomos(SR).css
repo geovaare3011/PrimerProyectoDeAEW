@@ -153,7 +153,7 @@ height: 100%;
 float: right;
 background-color: white;
 border: solid black;
-
+box-shadow: 0 40px 8px rgba(0, 0, 0, 0.2);
 }
 
 .img {
