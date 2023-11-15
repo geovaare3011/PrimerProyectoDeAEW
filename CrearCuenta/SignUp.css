@@ -135,7 +135,7 @@ form .button input:hover{
     width:0;
   }
 }
-.list{
+footer .list{
   margin-top: 10px;
   display: flex;
   border: none;
@@ -146,6 +146,16 @@ form .button input:hover{
   justify-content: space-evenly;
   display: flex;
   color:white;
+}
+
+footer a {
+  text-decoration: none;
+  color: #71b7e6;
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: #9b59b6;
 }
 .Rights{
   margin-top: 10px
