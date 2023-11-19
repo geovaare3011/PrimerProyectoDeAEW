@@ -82,6 +82,14 @@ h1{
 
 }
 
+
+#imagen-perfil {
+    width: 50px; 
+    height: 50px; 
+    border-radius: 50%; 
+    margin-left: 10px;
+}
+
 footer {
 margin-top: 115px;
     text-align: center;

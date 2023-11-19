@@ -1,5 +1,5 @@
 body {
-    background-color: #f2f2f2;
+    background-color: rgb(214, 240, 241);
     margin: 0;
     padding: 0;
 }
@@ -52,8 +52,8 @@ nav a {
 }
 
 .categoria {
-    background-color: #fff;
-    border: 1px solid #ddd;
+    background-color: rgb(229, 247, 204);
+    border: 1px solid #242222;
     padding: 20px;
     margin: 10px 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
