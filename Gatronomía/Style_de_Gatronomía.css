@@ -44,8 +44,11 @@ nav a {
     color: #fff;
     padding: 10px 20px; 
     border-radius: 5px; 
+    
 }
-
+.botones:active {
+    background-color: #1cc261; /* Cambio de color al presionar (indigo) */
+}
 
 
 .container {
@@ -75,6 +78,14 @@ footer {
 
 .imagen-principal {
     text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.5s ease; /* Agregamos una transición a la propiedad transform */
+
+}
+
+.imagen-principal:hover {
+    transform: scale(1.1); /* Efecto de escala al pasar el mouse sobre la imagen */
 }
 
 .plato {
@@ -84,18 +95,19 @@ footer {
     text-align: center;
 }
 
-.ceviche-img {
-    width: 300px; 
+.platos-imagen {
+    width: 300px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s ease; /* Agregamos una transición a la propiedad transform */
 }
 
-.causa-rellena-img {
-    width: 300px; 
+.platos-imagen:hover {
+    transform: scale(1.1); /* Efecto de escala al pasar el mouse sobre la imagen */
 }
+    
 
-.papa-rellena-img {
-    width: 300px; 
-}
 
-.papa-huancaina-img {
-    width: 300px; 
-}
+
+
+
