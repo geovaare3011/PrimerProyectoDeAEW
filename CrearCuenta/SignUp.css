@@ -5,6 +5,10 @@
     box-sizing: border-box;
     font-family:'Popping' ,sans-serif;
 }
+
+
+
+
 body{
   display: flex;
   height: 100vh;
@@ -148,10 +152,12 @@ footer .list{
   color:white;
 }
 
-footer a {
+#footer-a {
+ 
   text-decoration: none;
   color: #71b7e6;
   transition: color 0.3s;
+  
 }
 
 footer a:hover {
