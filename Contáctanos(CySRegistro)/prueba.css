@@ -1,22 +1,70 @@
-header{ 
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: tahoma;
+    color: #444;
+}
+
+section{
    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 400px;
+    width: 1200px;
+    background-color: white;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    display: flex;
+}
+
+.content{
+   
+    width: calc(50% - 50px);
+    height: 100%;
+    background-color: white;
+    padding: 2% 5%;
+    line-height: 1.5em;
+    font-size: 18px;
+    text-align: justify;
+
+}
+
+.imagebox{
+
+    width: calc(50% + 50px);
+    height: 100%;
+    background-color: rgb(31, 223, 223);
+    border-left: 100px solid white;
+    border-bottom: 400px solid transparent;
+}
+
+h1{
+
+    text-transform: uppercase;
+}
+
+header{ 
+    
     position: relative;
-    width: 99%;
+    width: 98.7%;
     height: auto;
     display: grid ;
     margin-bottom:10px ;
     height: 50px ;
     justify-content:space-between;
     align-items: flex-end;
+    background-color:rgb(80, 26, 228) ;
     padding: 10px;
     border-radius:9px ;
     flex-direction: column;
     z-index: 0;
     border: 2px solid #000000;
     grid-template-columns: 1fr 1fr ;
-    background:linear-gradient(100deg, rgb(194, 155, 240),rgb(106, 131, 231)) ; ;
-
-
 }
 
 #logo-header{
@@ -24,21 +72,17 @@ header{
   width: 45px;
   height: auto;
   padding-left: 30px;
-
 }
 
 
 .nav-link{
-
   float:right;
   padding-left: 10px;
   padding-right: 10px;
   padding-bottom: 10px;
-
 }
 
 .boton-nav{
-
   position: relative;
   border: none;
   padding: 7px 17px;
@@ -47,18 +91,14 @@ header{
   border-radius: 10px;
   cursor: pointer;
   transition: background-color 0.3s; /* Transición de color de fondo */
-
 }
 
 .boton-nav:active {
-
   background-color: #1cc261; /* Cambio de color al presionar (indigo) */
-
 }
 
 
 .boton-nav::after{
-
   content:"";
   position: absolute;
   top: 0;
@@ -76,52 +116,8 @@ header{
 
 
 @keyframes glowing {
-
  0%{background-position:0.0;}
  50%{background-position:400%.0;}
  100%{background-position:0.0;}
-
-}
-
-.logo{
-
-  width: 50px;
-  height: auto;
-  margin-right: 20px;
-
-}
-
-#Titulo1{
-  border:solid;
-  font-size:50px;
-  width: 49%;
-  height: 49%;
-  float: left;
-  text-align: left;
-  
-}
-
-#Titulo2{
-  border:solid;
-  font-size:50px;
-  width: 49%;
-  height: 49%;
-  float: right;
-  text-align: justify;
-
-}
-
-#Titulo3{
-  border:solid;
-  font-size:50px;
-  width: 49%;
-  float: left;
-  text-align: justify;
-
-}
-
-#img-titulo2{
-
-  width:80px;
 
 }
