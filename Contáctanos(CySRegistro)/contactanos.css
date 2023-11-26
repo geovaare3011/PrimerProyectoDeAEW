@@ -185,8 +185,15 @@ a{
 }
 
 footer{
-    
     width:100%;
     text-align: center;
-    justify-content:space-between;
+
+}
+
+#footer-a{
+    color: white;    
+}
+
+#footer-a:hover{
+    color:rgb(175, 114, 231);
 }
