@@ -40,7 +40,13 @@ nav a {
     color: #fff;
     padding: 10px 20px; 
     border-radius: 5px; 
+    transition: transform 0.5s ease; /* Agregamos una transición a la propiedad transform */
 }
+
+.botones:hover {
+    transform: scale(1.1); /* Efecto de escala al pasar el mouse sobre la imagen */
+}
+
 
 
 
@@ -48,15 +54,30 @@ nav a {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    display: grid;
+    justify-content: center;
+    
+    grid-template-columns: 1fr 1fr;
+    
     
 }
 
 .categoria {
+    text-align: center;
     background-color: rgb(229, 247, 204);
     border: 1px solid #242222;
-    padding: 20px;
+    padding: 10px;
     margin: 10px 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 48%; /* Ajusta el ancho según tus necesidades */
+    margin-bottom: 20px;
+    
+}
+
+.categoria img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Ajusta el radio de borde según tus necesidades */
 }
 
 .hr {
@@ -64,6 +85,11 @@ nav a {
     margin: 0 auto;
    
     
+}
+
+
+.img-sub-categoria {
+    width: 300px;
 }
 
 footer {
