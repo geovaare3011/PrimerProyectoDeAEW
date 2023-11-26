@@ -44,11 +44,17 @@ nav a {
     color: #fff;
     padding: 10px 20px; 
     border-radius: 5px; 
-    
+       
 }
+
+.botones:hover {
+    transform: scale(1.1); /* Efecto de escala al pasar el mouse sobre la imagen */
+}
+
 .botones:active {
     background-color: #1cc261; /* Cambio de color al presionar (indigo) */
 }
+
 
 
 .container {
