@@ -1,0 +1,305 @@
+* {
+    box-sizing: border-box;
+}
+body{
+     font-family: Arial, sans-serif;
+     margin:0;
+     flex-direction: column; /* para  que mi imagen este en columnas */
+     padding: 0%;
+     background-color:#f4f4f4;
+     align-items: center; /* mis iten esten  o div  centrados */
+  
+   
+}
+
+#fondo {
+    background-image: url(../img/comunidades1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    height: 563px;
+    display: flex;
+    color: white;
+    margin-bottom:-194px;
+}
+
+
+
+
+h1{
+    font-size:65px;
+    text-align: center;
+    height: 123px;
+    color: #fbfdff;
+    
+  
+
+}
+
+
+header{ 
+   
+    position: relative;
+    width: 91vw; /*ase que el contenido se agrupe  de acuersdo la forma que le des  */
+    display: flex ;
+    justify-content:space-between;
+    align-items: flex-end;
+    padding: 13px;
+    border-radius:34px ;
+    z-index: 0;
+    flex-direction: column;
+    border: 2px solid white;
+    margin-top: 20px;
+    margin-right: 20px;
+
+    
+}
+
+.contenedor-header{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column; /* Alinear como columna */
+}
+
+
+.titulo-header {
+    display: flex;
+    justify-content: center;
+   
+}
+
+.casita-fondo{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.nav-link{
+  
+    padding-right: 10px;
+
+}
+
+
+.boton-nav{
+    position: relative;
+    border: none;
+    padding: 12px 29px;
+    background-color: #a15ea1;
+    color: #fff;
+    border-radius: 27px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Transición de color de fondo */
+
+}
+
+.boton-nav:active {
+    background-color: #1c27c2; /* Cambio de color al presionar (indigo) */
+}
+
+
+
+.boton-nav::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgb(142, 174, 221),rgba(197, 11, 166, 0.432));
+    background-size: 800%;
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+}
+
+@keyframes glowing {
+   0%{background-position:0.0;}
+   50%{background-position:400%.0;}
+   100%{background-position:0.0;}
+
+}
+
+
+
+.img-casa{
+ width: 115px;
+ height: 123px;
+
+}
+
+.img-premio{
+    width: 115px;
+    height: 123px;
+
+}
+
+.premio{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+   
+
+
+}
+
+.caja{
+
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+    max-width: 1003px;
+    text-align: center;
+    align-items: center;
+}
+  
+.card {
+    border: 1px solid #ccc;
+    background-color: #f8f8f8;
+    border-radius: 8px; 
+    text-align: center;
+    padding:0px;
+    box-shadow: 20px -16px 4px rgba(0, 0, 0, 0.1);/* para que el fondo tenga  bordes a lados*/
+    margin:20px;
+    width: 292px; /* Ajusta el ancho de la tarjeta */
+    height: 331px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.card img {
+    max-width: 100%;
+   
+
+   
+}
+
+  .article-1{
+    display: flex;
+    justify-content: space-between;
+    gap:0px;
+
+  }
+
+  .color-1{
+    background-color: rgb(0, 225, 255)
+
+  }
+
+  .color-2{
+
+    background-color: black;
+
+  }
+
+  article h2{
+   color:white ;
+  }
+
+  article {
+    
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding:50px;
+    height:282px;
+    width: 100%;
+    text-align: center;
+ 
+ 
+  }
+
+
+  article p{
+   color:white ;
+  }
+ul{
+    list-style-type: none;
+    padding: 0;
+
+}
+
+li {
+    display: inline;
+    margin: 0 10px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+h1{
+   
+    font-size:44px;
+}
+
+
+
+.titulo-comunidades{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+hr{
+    background-color: #111313;
+    margin-top: 59px;
+
+}
+
+.card p{
+
+   color: #161616;
+    
+}
+
+
+footer{
+  
+    border: none;
+    background-color: blueviolet ;
+ 
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-top: 14px;
+   
+
+}
+
+footer p {
+    color: white;
+}
+
+.sin-salto-linea {
+    white-space: nowrap;
+}
+
+.subrayado{
+    color: white;
+    transition: color 0.3s;
+}
+
+.subrayado:hover {
+    color: #140724
+}
+
+
+select {
+    font-size:18px; /* Cambia el tamaño del texto del select */
+    padding: 10px; /* Ajusta el espacio interno del select */
+    width: 221px; /* Ajusta el ancho del select */
+    height: 44px; /* Ajusta la altura del select */
+}
+
+
