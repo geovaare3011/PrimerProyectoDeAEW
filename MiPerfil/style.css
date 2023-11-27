@@ -1,0 +1,330 @@
+
+*{
+    box-sizing: border-box;
+}
+body{
+
+    font-family: Arial, sans-serif;
+    margin: 0;
+    flex-direction: column;
+    padding: 0%;
+    background-color: #f3eeee;
+    align-items: center;
+  
+}
+
+#fondo {
+    background-image: url(../img/ondas1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    font-family: Arial, sans-serif;
+    height: 418px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+header{ 
+    position: relative;
+    width: 91vw;
+    display: flex ;
+    justify-content:space-between;
+    align-items: flex-end;
+    padding: 13px;
+    border-radius:43px ;
+    flex-direction: column;
+    z-index: 0;
+    border: 2px solid #000000;
+    background-color:white;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.contenedor-header{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column; /* Alinear como columna */
+}
+
+.titulo-header {
+    display: flex;
+    align-items: flex-start;
+}
+
+
+
+
+
+.nav-link{
+  
+    padding-right: 10px;
+
+}
+nav .boton-nav{
+    position: relative;
+    padding: 12px 29px;
+    background-color:#9d61e5;
+    color: #fff;
+    border-radius: 27px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* cambia el color de fondo */
+}
+
+.boton-nav:active {
+    background-color: #1c27c2; /* Cambio de color al presionar (indigo) */
+}
+
+
+.boton-nav::after{
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(45deg, rgb(221, 142, 221),rgb(197, 11, 126)) ;
+    background-size: 800%;
+    
+    filter: blur(8px); /*filtro de desenfoque*/
+    animation: glowing 20s linear infinite;
+
+}
+
+
+@keyframes glowing {
+   0%{background-position:0.0;}
+   50%{background-position:400%.0;}
+   100%{background-position:0.0;}
+
+}
+
+.h1-dato{
+    
+    height: 34px;
+    font-size:44px;
+   
+
+}
+
+.datos-personal-imagen {
+    margin-top: -146px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.datos-personales h1 {
+        font-size: 44px;
+        color: black;
+        margin-left: 90px;
+         /* porque tenemos 1 fondo arriba */
+    }
+
+.datos-personales ul {
+        font-size: 24px;
+        margin-left: 82px;
+        color: black
+    }
+
+.datos-personales ul li {
+        margin-bottom: 66px;
+    }
+
+
+.datos-item {
+    display: block;
+    margin-bottom: 10px; /* Ajusta según sea necesario para el espacio entre elementos */
+}
+
+.datos-personal-imagen .imagenes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* display: block; /* Isso é opcional e pode ser ajustado conforme necessário */
+    
+}
+
+.datos-personal-imagen .imagenes button {
+    margin-top: 32px;
+}
+
+#imagenMostrada{
+    width: 250px;
+    height: 241px;
+    border-radius: 246px;
+    margin-top: 81px;
+}
+
+.boton-perfil{
+    margin-top: 1px;
+
+}
+
+
+.comuni-1{
+
+    font-size :44px;
+    margin-left: 177px;
+    height: 110px;
+    color: black;
+    margin-top: 100px;
+}
+
+
+.caja{
+
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+    max-width:1003px;
+    text-align: center;
+    align-items: center;
+    
+}
+
+
+
+.card {
+    border: 1px solid black;
+    background-color: #f8f8f8;
+    border-radius: 8px; 
+    text-align: center;
+    padding: 0px;
+    box-shadow: 20px -16px 4px rgba(0, 0, 0, 0.1);/* para que el fondo tenga  bordes a lados*/
+    margin: 20px;
+    margin: 20px;
+    width: 307px;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+
+
+.card img {
+    max-width: 100%;
+    margin-top: 25px;
+    margin-bottom: 16px;
+}
+
+h2{
+    font-size:22px;
+
+
+}
+
+p{
+
+    font-size:12px;
+
+
+}
+
+#fondo2 {
+    background-image: url(../img/ondas.png);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    max-width: 100%; 
+    
+
+}
+
+.cuerpo-footer{
+
+    position: relative;
+    width: 100%;
+    height: 370px; /* Ajusta la altura del SVG según tu necesidad */
+    display: flex;
+    align-items: end; /* alinea basado en el contendor arriba centro abajo */
+    justify-content: center; /* alinea en plano (horinzontal) */
+   }
+
+   footer{
+
+    position:absolute;
+    border: none;
+    background-color: rgb(142, 56, 255);
+    padding: 11px;
+}
+
+
+
+ul{
+list-style-type: none;
+padding: 0;
+
+
+}
+
+
+
+li {
+    display: inline;
+    margin: 0 9px;
+    
+}
+
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+footer p {
+    color: white;
+
+}
+
+
+.sin-salto-linea {
+    white-space: nowrap;
+}
+
+.subrayado{
+    color: white;
+    transition: color 0.3s;
+}
+
+.subrayado:hover {
+    color: #140724
+}
+
+  
+
+
+.opciones-ocultas {
+    display: none;
+    position: absolute;
+    top: 104%;
+    left: 386px;
+    width: 100%;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.opciones-ocultas img {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.opciones-ocultas img:hover {
+    border: 2px solid #333;
+}
