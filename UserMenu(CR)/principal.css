@@ -1,0 +1,262 @@
+
+*{
+    box-sizing: border-box;
+}
+body{
+     font-family:sans-serif ;
+     margin:0;
+     flex-direction: column;
+     padding: 3%;
+     margin: 0;   
+     background:linear-gradient(rgb(246, 245, 247),blueviolet);
+}
+
+
+
+header{ 
+    position: relative;
+    width: 99.5%;
+    margin-bottom:10px ;
+    padding: 10px;
+    border-radius:9px ;
+    z-index: 0;
+    border: 2px solid #000000
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.nav-link{
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+.boton-nav{
+    position: relative;
+    border: none;
+    padding: 7px 17px;
+    background-color: #a15ea1;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Transición de color de fondo */
+}
+
+.boton-nav:active {
+    background-color: #1cc261; /* Cambio de color al presionar (indigo) */
+}
+
+
+.boton-nav::after{
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    background-size: 800%;
+    
+    filter: blur(8px); /*filtro de desenfoque*/
+    animation: glowing 20s linear infinite;
+
+}
+
+
+@keyframes glowing {
+   0%{background-position:0.0;}
+   50%{background-position:400%.0;}
+   100%{background-position:0.0;}
+
+}
+
+
+
+
+
+
+.opciones-menu {
+    list-style-type: none;
+    padding: 39px;
+    margin: 0;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    display: none;
+    background-color: rgb(211, 26, 211);
+    border: 1px solid violet;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 0;
+  }
+
+  .opciones-menu li {
+    padding: 10px;
+  }
+  
+  .opciones-menu li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+  }
+
+
+  
+.silder-box{
+    width: 890px ;
+    height: 271px; ;
+    margin: -7px auto 0;
+    border: 4px solid #141313; 
+    overflow: hidden;  
+ 
+ }
+ 
+ .silder-box ul{
+     display: flex ;
+     padding: 18px;
+     width:300% ;
+     animation: slide 20s linear infinite;
+     overflow: hidden;
+     white-space: nowrap;
+     position: relative;
+     z-index: -1;
+ 
+ }
+ 
+ .silder-box li{
+     width:100%;
+     height: 200px;
+     list-style: none;
+     position:relative ;
+       
+ 
+ }
+ 
+ 
+ .silder-box img{
+      width: 272px;
+      height: 201px;
+      margin-top: -18px;
+      margin-left: 86px;
+ 
+ }
+ 
+ 
+ 
+ @keyframes slide {
+ 
+     0% {
+         transform: translateX(0);
+       }
+       
+       100% {
+         transform: translateX(-41.2%);
+       }
+ 
+     /* 0%  al 50 { margin-left: 0px ;}
+     50% al 100  { margin-left: -80%;}
+     100% debe ser igual al inicio { margin-left: 0px;} */
+   
+ } 
+ 
+
+ .titulo-comunidades{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+select {
+    font-size:18px; 
+    padding: 10px; 
+    width: 221px; 
+    height: 44px; 
+}
+
+
+hr{
+    background-color: #111313;
+    margin-top: 59px;
+
+}
+ 
+.card3{
+    margin-top: 50px;
+    height: 50%; 
+    border:1px solid rgb(175, 112, 16);
+    overflow: hidden;
+    background: beige;
+    display: flex;
+ 
+ }
+
+
+ 
+.card{
+    margin-top: 50px;
+   height: 50%; 
+   border:1px solid rgb(204, 160, 93);
+   overflow: hidden;
+   display: flex;
+
+}
+
+.imagen {
+    
+    width: 235px;
+    height: 153px;
+}
+
+
+.content{
+    padding: 15px 0px 0px 44px;
+}
+
+footer{
+ 
+    border: none;
+    padding: 0px;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 14px;
+  
+
+}
+
+ footer ul {
+    list-style-type: none ;
+    margin:0px ;
+    padding: 0px;
+ 
+ }
+ 
+ footer li {
+    display: inline;
+    margin: 0 10px;
+}
+
+
+ a {
+    text-decoration: none;
+    color: #333;
+}
+
+
+
+
+.sin-salto-linea {
+    white-space: nowrap;
+}
+
+.subrayado{
+    color: white;
+    transition: color 0.3s;
+}
+
+.subrayado:hover {
+    color: #140724
+}
