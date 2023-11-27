@@ -103,3 +103,48 @@ aside{
     list-style-type: square;
     margin: 0px;
 }
+
+section{
+  width: 69%;
+  height: auto;
+  float:right;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+article{
+  width: 97.5%;
+  height: auto;
+  float: left;
+  margin: 0 1% 1% 1%;
+  border: 1px dashed gray;
+}
+
+.img-article{
+  width: 30%;
+  height:  150px;
+  float: left;
+  margin: 2px;
+}
+
+.p-article{
+  text-align: justify;
+}
+
+footer{
+
+  
+  text-align:center;
+  border:solid;
+}
+
+#footer-a{
+  
+  padding-left: 15px;
+  text-align:center;
+  color:black;
+  font-size:22px;
+  text-decoration: none ;
+
+}
