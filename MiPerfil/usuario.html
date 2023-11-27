@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>usuario de perfil</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <link rel="shortcut icon" href="../img/logo-icon1.webp" type="image/x-icon" />
+
+  <body>
+
+   
+
+ <main>
+  <div id="fondo">
+    <div class="contenedor-header">
+      
+      <header>
+        <nav>
+          <div>
+            <a href="" class="nav-link">
+              <button class="boton-nav">Inicio</button></a
+            >
+            <a href="" class="nav-link">
+              <button class="boton-nav">¿Quienes somos?</button></a
+            >
+            <a href="" class="nav-link">
+              <button class="boton-nav">Registro</button></a
+            >
+            <a href="" class="nav-link">
+              <button class="boton-nav">Contactanos</button></a
+            >
+          </div>
+        </nav>
+      </header>
+    
+
+      <div class="titulo-header">
+        <h1 class="h1-dato">  Usuario</h1>
+      </div>
+  
+     
+    </div>
+
+ </div>
+
+
+ <section class="datos-personal-imagen">
+  <div class="datos-personales">
+
+    <h1>Datos  </h1>
+
+     <ul>
+        <li class="datos-items">
+          <li class="datos-item"> Nombre: Juan</li>
+     
+
+          <li class="datos-item"> Apellido: Pérez</li>
+
+          <li class="datos-item"> Edad: 25</li>
+       </li>
+      </ul>
+
+   </div>
+
+  <div class="imagenes">
+      <img id="imagenMostrada" src="imagenes/avatar.jpg" alt="avatar actual">
+      
+      
+      <button onclick="mostrarOpciones()">Cambiar avatar</button>
+      <div id="opciones" class="opciones-ocultas">
+        <img src="imagenes/avatar1.jpg" alt="Opción de avatar 1" onclick="seleccionarOpcion(1)">
+        <img src="imagenes/avatar2.jpg" alt="Opción de avatar 2" onclick="seleccionarOpcion(2)">
+        <img src="imagenes/avatar3.jpg" alt="Opción de avatar 3" onclick="seleccionarOpcion(3)">
+        <img src="imagenes/avatar4.jpg" alt="Opción de avatar 4" onclick="seleccionarOpcion(4)">
+        <img src="imagenes/avatar5.jpg" alt="Opción de avatar 5" onclick="seleccionarOpcion(5)">
+        <img src="imagenes/avatar6.jpg" alt="Opción de avatar 6" onclick="seleccionarOpcion(6)">
+        <img src="imagenes/avatar7.jpg" alt="Opción de avatar 7" onclick="seleccionarOpcion(7)">
+    </div>
+  </div>
+ </section>
+
+
+ <section>
+  <h1 class="comuni-1">comunidades</h1>
+
+  <div class="caja">
+    <div class="contenedor">
+      <div class="card">
+        <img src="../img/musica.jpg" alt="imagen" />
+        <div class="cart-text">
+          <h2>MUSICA </h2>
+          <p>El Arte de combinar los sonidos de instrumentos.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../img/programador .jpg" alt="imagen" />
+        <div class="cart-text">
+          <h2>PROGRAMADOR </h2>
+          <p>Aporta ayuda a tus conocimientos y mejora tus metodos.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../img/deporte.jpg" alt="imagen" />
+        <div class="cart-text">
+          <h2>DEPORTE</h2>
+          <p>Recreación, pasatiempo o ejercicio físico..</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+ </section>
+   
+
+      <div id="fondo2">
+
+       
+        <div class="cuerpo-footer">
+          <footer>
+            <ul>
+              <li class="sin-salto-linea"><a class="subrayado" href="#">Politica de privacidad</a></li>
+              <li class="sin-salto-linea"><a class="subrayado" href="#">Limitacion de Responsabilidad</a></li>
+              <li class="sin-salto-linea"><a class="subrayado" href="#">Codigo de conducta</a></li>
+              <li class="sin-salto-linea"><a class="subrayado" href="#">¿Quienes somos?</a></li>
+              <li class="sin-salto-linea"><a class="subrayado" href="#">Declaracion de cookies</a></li>
+              <li><span class="sin-salto-linea">&copy; 2023 Mi Página Web</span></li>
+            </ul>
+          </footer>
+        </div>
+      </div>
+    </main>
+
+    <script>
+      
+
+      var indiceFoto = 0;
+
+      function mostrarOpciones() {
+        var opciones = document.getElementById('opciones');
+        opciones.style.display = (opciones.style.display === 'block') ? 'none' : 'block';
+      }
+
+      function seleccionarOpcion(opcion) {
+        var avatar = document.getElementById('imagenMostrada');
+        avatar.src = 'imagenes/avatar' + opcion + '.jpg';
+
+        // Oculta las opciones después de seleccionar una
+        var opciones = document.getElementById('opciones');
+        opciones.style.display = 'none';
+    }
+    </script>
+  </body>
+</html>
