@@ -4,11 +4,10 @@
 body{ 
     /*el body afecta a toda la pagina*/
      font-family:sans-serif ;
-     margin:0;
-     flex-direction: column;
+     background: linear-gradient(rgb(26 21 30),#8b52bf);
      padding: 3%;
      margin: 0;   
-     background-color: rgb(214, 214, 214);
+     
 }
 
 main{
@@ -25,19 +24,22 @@ main{
 
 }
 
+.color h1{
+    color:white;
+
+
+}
 
 header{
     /*todo el header es la caja que 
     rodea a los botones*/
     position: relative;
     width: 99.5%;
-    height: 50px;
     display: flex ;
     margin-bottom:10px ;
     height: 50px ;
     justify-content:space-between;
     align-items: flex-end;
-
     border-radius:9px ;
     flex-direction: column;
     z-index: 0;
@@ -48,8 +50,11 @@ header{
 
 nav{
 
+   
     width: 100%;
     height: inherit;
+    background-color: rgb(253, 251, 251);
+    border-radius: 5px;
 
 }
 
@@ -87,6 +92,7 @@ nav{
 
     padding-left: 10px;
     padding-right: 10px;
+}
 
 
 .boton-nav{
@@ -128,7 +134,7 @@ nav{
 }
 
 /*hasta esta llave*/
-}
+
 
 .espacio{
 
@@ -237,6 +243,10 @@ float: left;
     
     }
 
+    .Titular h1{
+        color:white;
+    }
+
     .FPerfil{
         width: 90px;
         border-radius: 340px;
@@ -244,6 +254,7 @@ float: left;
     
     .Nombres{
         text-align: left;
+        color:#0c3c5d;
 
         float: right;
     }
@@ -284,15 +295,47 @@ float: left;
         margin-left: 15%;
         margin-right: 15%;
     }
+    .person{
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        
+    }
+
+
+    .star-rating {
+        font-size: 0;
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+    
+    .star-rating input {
+        display: none;
+    }
+    
+    .star-rating label {
+        display: inline-block;
+        cursor: pointer;
+        font-size: 24px;
+        color: #ccc;
+    }
+    
+    .star-rating label:before {
+        content: '★';
+    }
+    
+    .star-rating input:checked ~ label {
+        color: #ffcc00;
+    }
 
 
 
-.imagen{
 
-width: 100%;
-height: 100%;
 
-}
+
+    
+
 .Cestrellas{
 
     width: 100%;
@@ -384,7 +427,7 @@ height: 100%;
     border: 1px solid rgb(0, 0, 0);
     border-radius: 160px;
     margin-top: 10px;
-    background-color: gray;
+    background-color:white;
     box-shadow: 0 40px 8px rgba(0, 0, 0, 0.2);
         
     
@@ -397,7 +440,7 @@ height: 100%;
         border: 1px solid rgb(0, 0, 0);
         border-radius: 140px;
         margin-top: 10px;  
-        background-color: gray;
+        background-color: white;
         box-shadow: 0 40px 8px rgba(0, 0, 0, 0.2);
     }
 
@@ -411,11 +454,12 @@ height: 100%;
 
     footer{
         width: 100%;
-        background-color: rgb(214, 214, 214);
+      
         padding: 0px;
         text-align: center;
         justify-content: space-evenly;
         display: flex;
+        flex-wrap: wrap;
     
      }
 
@@ -435,3 +479,19 @@ height: 100%;
         text-decoration: none;
         color: #333;
     }
+
+
+    .sin-salto-linea {
+        white-space: nowrap;
+    }
+    
+    .subrayado{
+        color: white;
+        transition: color 0.3s;
+    }
+    
+    .subrayado:hover {
+        color: #140724
+    }
+    
+    
